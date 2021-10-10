@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src\\test\\resources\\Features", glue = "StepDef", 
 monochrome = true, dryRun = false,plugin = {"pretty", "rerun:rerun/failed_scenarios.txt",
-		"json:src\\test\\resources\\Report\\output.json"},tags = "@rege",
+		"json:src\\test\\resources\\Report\\output.json"},tags = "@login",
 		snippets = SnippetType.CAMELCASE)
 public class TestRunner {
 	@AfterClass
