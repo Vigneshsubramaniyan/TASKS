@@ -1,0 +1,138 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3014000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Lauch the browser",
+            "match": {
+              "location": "StepDef.LoginPage.lauch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2015000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "open the application",
+            "match": {
+              "location": "StepDef.LoginPage.open_the_application()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-17T03:21:15.824Z",
+        "line": 17,
+        "name": "Login the application with valid cerdentials",
+        "description": "",
+        "id": "validating-the-login-page-of-application;login-the-application-with-valid-cerdentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 301000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter the \"thillai\" and \"andfds\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"thillai\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"andfds\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDef.LoginPage.enter_the_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click the login button",
+            "match": {
+              "location": "StepDef.LoginPage.click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Wrong credentials\u0027]\"}\n  (Session info: chrome\u003d93.0.4577.82)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027GUHANRAJ\u0027, ip: \u0027192.168.137.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\\Users\\thill\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a215323dc09217cf4e9f9eb3db1c0a67\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Wrong credentials\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDef.LoginPage.validate_the_login_message(LoginPage.java:48)\r\n\tat ✽.validate the login \"Wrong Credentials\" message(file:///C:/Users/thill/eclipse-workspace/Cucumber7AM/src/test/resources/Features/LoginFBook.feature:13)\r\n",
+              "duration": 10572000000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "validate the login \"Wrong Credentials\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wrong Credentials\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDef.LoginPage.validate_the_login_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@home"
+          },
+          {
+            "name": "@reg"
+          }
+        ]
+      }
+    ],
+    "name": "Validating the login page of application",
+    "description": "",
+    "id": "validating-the-login-page-of-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/LoginFBook.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@home",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  }
+]
