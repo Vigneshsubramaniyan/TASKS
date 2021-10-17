@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6122000000,
+              "duration": 13509000000,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 2371000000,
+              "duration": 7119000000,
               "status": "passed"
             },
             "line": 6,
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-10T04:33:30.870Z",
+        "start_timestamp": "2021-10-17T08:04:30.663Z",
         "before": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 13000000,
               "status": "passed"
             },
             "match": {
@@ -49,6 +49,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -57,6 +58,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -79,7 +81,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -100,7 +101,7 @@
         "steps": [
           {
             "result": {
-              "duration": 271000000,
+              "duration": 587000000,
               "status": "passed"
             },
             "line": 10,
@@ -132,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 116000000,
+              "duration": 239000000,
               "status": "passed"
             },
             "line": 14,
@@ -144,7 +145,7 @@
           },
           {
             "result": {
-              "duration": 179000000,
+              "duration": 750000000,
               "status": "passed"
             },
             "line": 15,
@@ -202,7 +203,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1582000000,
+              "duration": 4335000000,
               "status": "passed"
             },
             "line": 5,
@@ -214,7 +215,7 @@
           },
           {
             "result": {
-              "duration": 1528000000,
+              "duration": 6023000000,
               "status": "passed"
             },
             "line": 6,
@@ -227,10 +228,169 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-10T04:33:40.048Z",
+        "start_timestamp": "2021-10-17T08:04:53.536Z",
         "before": [
           {
             "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.Hooks.sample()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.Hooks.sample2()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.Hooks.sample4()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Login the application with valid cerdentials",
+        "description": "",
+        "id": "validating-the-login-page-of-application;login-the-application-with-valid-cerdentials;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.Hooks.sample5()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.Hooks.sample3()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.Hooks.sample1()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 403000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter the \"thillai\" and \"andfds\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"thillai\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"andfds\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDef.LoginPage.enter_the_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click the login button",
+            "match": {
+              "location": "StepDef.LoginPage.click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 682000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "validate the login \"Wrong Credentials\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wrong Credentials\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDef.LoginPage.validate_the_login_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@home"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3636000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Lauch the browser",
+            "match": {
+              "location": "StepDef.LoginPage.lauch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2749000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "open the application",
+            "match": {
+              "location": "StepDef.LoginPage.open_the_application()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-17T08:05:05.186Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -269,7 +429,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -290,7 +449,7 @@
         "steps": [
           {
             "result": {
-              "duration": 242000000,
+              "duration": 468000000,
               "status": "passed"
             },
             "line": 22,
@@ -312,7 +471,7 @@
           },
           {
             "result": {
-              "duration": 133000000,
+              "duration": 130000000,
               "status": "passed"
             },
             "line": 23,
@@ -324,7 +483,7 @@
           },
           {
             "result": {
-              "duration": 4181000000,
+              "duration": 4824000000,
               "status": "passed"
             },
             "line": 24,
