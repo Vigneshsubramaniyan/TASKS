@@ -7,7 +7,7 @@ public class Hooks {
 
 	@Before(order = 1)
 	public void sample() {
-		System.out.println("Before scenario");
+		System.out.println("Thillai arasu");
 	}
 
 	@After(order = 1)
@@ -17,7 +17,7 @@ public class Hooks {
 
 	@Before(order = 2)
 	public void sample2() {
-		System.out.println("Before scenario2");
+		System.out.println("Greens technology");
 	}
 
 	@After(order = 2)
@@ -27,7 +27,7 @@ public class Hooks {
 
 	@Before(order = 3)
 	public void sample4() {
-		System.out.println("Before scenario4");
+		System.out.println("Chennai Omr");
 	}
 
 	@After(order = 3)
