@@ -48,7 +48,7 @@ public class LoginPage extends Base {
 
 	@Then("validate the login {string} message")
 	public void validate_the_login_message(String msg) {
-		System.out.println(msg);
+		System.out.println("hi helllo Jenkins");
 		closeBrowser();
 	}
 
