@@ -43,4 +43,6 @@ public class Base {
 	public void iWait(int time) {
 		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 	}
+	
+	
 }

@@ -19,7 +19,7 @@ public class TestRunner {
 		String path=System.getProperty("user.dir");
 		Reporting.jvmReport(path+"\\src\\test\\resources\\Report\\output.json");
 
-	System.out.println("Jenkins Project Setup Completed............");
+	System.out.println("Cucumber project completed on sunday by 10 am ");
 
 
 	}
