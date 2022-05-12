@@ -19,13 +19,11 @@ public class TestRunner {
 		String path=System.getProperty("user.dir");
 		Reporting.jvmReport(path+"\\src\\test\\resources\\Report\\output.json");
 			
-		System.out.println("Thillai Cucumber Project");
+		System.out.println("Thillai project cucumber1");
 		
-		System.out.println("Thillai Cucumber Project");
+		System.out.println("Thillai project cucumber2");
 		
-		System.out.println("Thillai Cucumber Project");
-		
-		System.out.println("Thillai Cucumber Project");
+		System.out.println("Thillai project cucumber3");
 
 
 	}
